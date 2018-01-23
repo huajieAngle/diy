@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- import CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<mt-header title="手工客" fixed>
+				<router-link to="/" slot="left">
+					<mt-button icon="back"></mt-button>
+				</router-link>
+				<mt-button icon="search" slot="right"></mt-button>
+			</mt-header>
+			<!--header-->
+			<mt-navbar class="page-part" :selected.sync="selected">
+				<mt-tab-item id="1">精选</mt-tab-item>
+				<mt-tab-item id="2">专题</mt-tab-item>
+				<mt-tab-item id="3">达人</mt-tab-item>
+				<mt-tab-item id="3">活动</mt-tab-item>
+			</mt-navbar>
+			<mt-navbar class="page-part" :selected.sync="selected">
+				<mt-tab-item id="1">热门教程</mt-tab-item>
+				<mt-tab-item id="2">会员周刊</mt-tab-item>
+				<mt-tab-item id="3">造物公园</mt-tab-item>
+				<mt-tab-item id="3">手艺中国</mt-tab-item>
+			</mt-navbar>
+			<mt--container>
+				<div class="host">
+					<img src="img/100.jpg" alt="" />
+					<p>每日热门教程 | 2018.01.22</p>
+				</div>
+				<div class="host">
+					<img src="img/100.jpg" alt="" />
+					<p>每日热门教程 | 2018.01.22</p>
+				</div>
+				<div class="host">
+					<img src="img/100.jpg" alt="" />
+					<p>每日热门教程 | 2018.01.22</p>
+				</div>
+				<div class="host">
+					<img src="img/100.jpg" alt="" />
+					<p>每日热门教程 | 2018.01.22</p>
+				</div>
+			</mt--container>
+			<!--footer-->
+			<mt-tabbar fixed>
+				<mt-tab-item id="">
+					<img slot="icon" src="img/timg (1).jpg">关注
+				</mt-tab-item>
+				<mt-tab-item id="订单">
+					<img slot="icon" src="img/timg (1).jpg"> 发现
+				</mt-tab-item>
+				<mt-tab-item id="发现">
+					<img slot="icon" src="img/timg (1).jpg"> 手工圈
+				</mt-tab-item>
+				<mt-tab-item id="我的">
+					<img slot="icon" src="img/timg (1).jpg"> 市集
+				</mt-tab-item>
+				<mt-tab-item id="我的">
+					<img slot="icon" src="img/timg (1).jpg"> 我的
+				</mt-tab-item>
+			</mt-tabbar>
+		</div>
+	</body>
+	<!-- import Vue before Mint UI -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- import JavaScript -->
+	<script src="https://unpkg.com/mint-ui/lib/index.js"></script>
+	<script>
+		new Vue({
+			el: '#app',
+			methods: {
+				handleClick: function() {
+					this.$toast('Hello world!')
+				}
+			}
+		})
+	</script>
+
+</html>

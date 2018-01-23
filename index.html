@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- import CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<mt-header title="手工客" fixed>
+				<router-link to="/" slot="left">
+					<mt-button icon="back"></mt-button>
+				</router-link>
+				<mt-button icon="search" slot="right"></mt-button>
+			</mt-header>
+			<!--header-->
+			<mt-navbar class="page-part" :selected.sync="selected">
+				<mt-tab-item id="1">精选</mt-tab-item>
+				<mt-tab-item id="2">专题</mt-tab-item>
+				<mt-tab-item id="3">达人</mt-tab-item>
+				<mt-tab-item id="3">活动</mt-tab-item>
+			</mt-navbar>
+			<mt--container>
+				<div class="banner">
+					<img src="https://sogoke-static.b0.upaiyun.com/static/v1/content/sogoker/34277.jpg" />
+				</div>
+				<mt-navbar class="page-part" :selected.sync="selected">
+					<mt-tab-item id="1"><img slot="icon" src="img/timg.jpg">看教程</mt-tab-item>
+					<mt-tab-item id="1"><img slot="icon" src="img/timg.jpg">买材料</mt-tab-item>
+					<mt-tab-item id="1"><img slot="icon" src="img/timg.jpg">逛集市</mt-tab-item>
+					<mt-tab-item id="1"><img slot="icon" src="img/timg.jpg">线下课</mt-tab-item>
+				</mt-navbar>
+				<div class="tu">
+					<a href=""><img src="img/80.jpg" class="le" /></a>
+					<a href=""><img src="img/80.jpg" /></a>
+				</div>
+				<div class="texunying">
+					<p>手工特训营</p>
+					<p class="baishi">线上拜师，让天下没有难学的手艺</p>
+					<mt-cell>
+						<img slot="icon" src="img/80 (1).jpg" width="80px" height="80px">
+						<div class="zz">
+							<p>苏苏服装裁剪特训营</p>
+							<span>零基础服装裁剪工艺技法系统学习</span>
+
+							</span>
+						</div>
+					</mt-cell>
+					<mt-cell>
+						<img slot="icon" src="img/80 (1).jpg" width="80px" height="80px">
+						<div class="zz">
+							<p>苏苏服装裁剪特训营</p>
+							<span>零基础服装裁剪工艺技法系统学习</span>
+
+							</span>
+						</div>
+					</mt-cell>
+					<mt-cell>
+						<img slot="icon" src="img/80 (1).jpg" width="80px" height="80px">
+						<div class="zz">
+							<p>苏苏服装裁剪特训营</p>
+							<span>零基础服装裁剪工艺技法系统学习</span>
+
+							</span>
+						</div>
+					</mt-cell>
+				</div>
+				<div class="zhibo">
+					<p>手作直播</p>
+					<p class="baishi">近距离更直观学习手工</p>
+					<mt-cell>
+						<div class="tu">
+							<a href=""><img src="img/80.jpg" class="le" /></a>
+							<a href=""><img src="img/80.jpg" /></a>
+						</div>
+					</mt-cell>
+				</div>
+				<div class="zhibo">
+					<p>手作众筹</p>
+					<p class="baishi">支持手艺人，让情怀落地</p>
+					<mt-cell>
+						<div class="tu">
+							<a href=""><img src="img/80.jpg" class="le" /></a>
+							<a href=""><img src="img/80.jpg" /></a>
+						</div>
+					</mt-cell>
+				</div>
+				<div class="zhibo">
+					<p>教程精选</p>
+					<p class="baishi">也许是全球最大的手工教程</p>
+					<mt-cell>
+						<div class="tu">
+							<a href=""><img src="img/80.jpg" class="le" /></a>
+							<a href=""><img src="img/80.jpg" /></a>
+						</div>
+					</mt-cell>
+				</div>
+			</mt--container>
+			<!--footer-->
+			<mt-tabbar fixed>
+				<mt-tab-item id="">
+					<img slot="icon" src="img/timg (1).jpg">关注
+				</mt-tab-item>
+				<mt-tab-item id="订单">
+					<img slot="icon" src="img/timg (1).jpg"> 发现
+				</mt-tab-item>
+				<mt-tab-item id="发现">
+					<img slot="icon" src="img/timg (1).jpg"> 手工圈
+				</mt-tab-item>
+				<mt-tab-item id="我的">
+					<img slot="icon" src="img/timg (1).jpg"> 市集
+				</mt-tab-item>
+				<mt-tab-item id="我的">
+					<img slot="icon" src="img/timg (1).jpg"> 我的
+				</mt-tab-item>
+			</mt-tabbar>
+		</div>
+	</body>
+	<!-- import Vue before Mint UI -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- import JavaScript -->
+	<script src="https://unpkg.com/mint-ui/lib/index.js"></script>
+	<script>
+		new Vue({
+			el: '#app',
+			methods: {
+				handleClick: function() {
+					this.$toast('Hello world!')
+				}
+			}
+		})
+	</script>
+
+</html>

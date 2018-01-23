@@ -1,0 +1,27 @@
+body{font-family: "微软雅黑";}
+.page-title {
+    font-size: 20px;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    line-height: 1;
+}
+.banner img,a{
+	width: 100%;
+}
+.tu{height: 5rem}
+.tu img{width: 48%;float: left}
+.tu img.le{padding-right: 4%;}
+.texunying{margin-top:1rem;}
+.texunying p,.zhibo p{text-align: center;padding-bottom: 0;margin-bottom: 0;}
+.texunying p.baishi,.zhibo p.baishi{font-size:12px;color: #999;text-align: center;padding: 0;margin: 0.5rem;}
+.texunying .mint-cell img{padding-top: 0.5rem;padding-bottom: 0.5rem;padding-right: 0;}
+.texunying .mint-cell-wrapper,.zhibo .mint-cell-wrapper{padding: 0;}
+.texunying .mint-cell-value .zz p,span{font-size: 12px;text-align: left;padding-left: 0.8rem;padding-bottom: 0.4rem;}
+.baishi img{width: 50%;float: left}
+.zhibo .mint-cell-title span{padding: 0;margin: 0;}
+.zhibo .tu{padding-top: 0.5rem;padding-bottom: 0.5rem;}
+/*vip*/
+.host img{width: 100%;}
+.host p{font-size: 12px;padding-left: 0.6rem;}
+/*vip*/
